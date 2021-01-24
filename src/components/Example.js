@@ -145,6 +145,7 @@ const DropDown = () => (
     fluid
     multiple
     selection
+    search
     icon
     
     options={options1}
