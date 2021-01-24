@@ -1,6 +1,6 @@
 import React from "react";
 import { Dropdown } from "semantic-ui-react";
-
+import '../App.css'
 const options1 = [
   {
     key: "1",
@@ -17,7 +17,7 @@ const options1 = [
     value: "2",
     image: {
       avatar: true,
-      src: "https://images.newindianexpress.com/uploads/user/imagelibrary/2020/2/26/w1200X800/Prithvi_Shaw_PTI.jpg"
+      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwRqgKDwvp7GBxmVbrJAuYShPrP3WDygcIVQ&usqp=CAU"
     }
   },
   {
@@ -35,7 +35,7 @@ const options1 = [
     value: "4",
     image: {
       avatar: true,
-      src: "https://timesofindia.indiatimes.com/photo/69257289.cms"
+      src: "https://m.cricbuzz.com/a/img/v1/192x192/i1/c170658/rohit-sharma.jpg"
     }
   },
   {
@@ -62,7 +62,7 @@ const options1 = [
     value: "7",
     image: {
       avatar: true,
-      src: "https://i.ndtvimg.com/i/2017-05/cheteshwar-pujara-bcci_806x605_81493654976.jpg"
+      src: "https://m.cricbuzz.com/a/img/v1/192x192/i1/c153263/cheteshwar-pujara.jpg"
     }
   },
   {
@@ -71,7 +71,7 @@ const options1 = [
     value: "8",
     image: {
       avatar: true,
-      src: "https://economictimes.indiatimes.com/thumb/msid-70304475,width-1200,height-900,resizemode-4,imgsize-694926/mahendra-singh-dhoni-pulls-out-of-west-indies-tour-takes-two-month-break-amid-retirement-speculation.jpg?from=mdr"
+      src: "https://s.ndtvimg.com/images/entities/300/ms-dhoni-700.png"
     }
   },
   {
@@ -89,7 +89,7 @@ const options1 = [
     value: "10",
     image: {
       avatar: true,
-      src: "https://www.crictracker.com/wp-content/uploads/2020/04/Yuzvendra-Chahal-1.jpg"
+      src: "https://m.cricbuzz.com/a/img/v1/192x192/i1/c170690/yuzvendra-chahal.jpg"
     }
   },
   {
@@ -98,7 +98,7 @@ const options1 = [
     value: "11",
     image: {
       avatar: true,
-      src: "https://bsmedia.business-standard.com/_media/bs/img/topic-profile/profile-images/full/1553260314.jpg"
+      src: "https://static.indiatvnews.com/ins-web/images/kuldeep-yadav-1540550580.jpg"
     }
   },
   {
@@ -141,13 +141,14 @@ const options1 = [
 
 const DropDown = () => (
   <Dropdown
-    placeholder=" Click Here To Select Team"
+    placeholder=" Click or type To Select Team"
     fluid
     multiple
     selection
-    search
     icon
-    
+    search
+    className="drop"
+    checkbox
     options={options1}
   />
 );
